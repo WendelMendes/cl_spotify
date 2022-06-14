@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+*{
+    box-sizing: border-box;/*padding não afeta os elementos da box*/
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-primary{
+    background-color: #1db954;
+    color: white;
+    text-transform: uppercase; /*Deixa tudo em maiusculo*/
+    padding: 15px 60px;
+    border-style: none;
+    border-radius: 30px;
+    letter-spacing: 1px; /*Coloca espaçamente entre as letras*/
+    font-weight: bold;
+}
+
+#navbar{
+    display: flex;
+    justify-content: center;/*alinha conteudo flex horizontalmente*/
+    background-color:rgba(0,0,0,0.6);
+    color: white;
+    position: fixed; /*Deixa navbar fixa mesmo com rolagem*/
+    top: 0;
+    width: 100%;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center; /*alinha conteudo flex verticalmente*/
+    justify-content: space-between; /*Deixar espaço entre os dois spoty e munu*/
+    width: 45%;/*lagura do container perante navbar*/
+    padding: 15px 0;
+}
+
+.logo{
+    height: 40px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+li{
+    padding: 0 20px;
+}
+
+ul li:nth-child(3){/*Coloquei na filha de ul, a li de numero tres*/
+    border-right: 1px solid white;
+}
+
+#showcase{
+    height: 100vh;/*ocupar 100% da visao da viewport*/
+    display: flex;
+    justify-content: center; /*alinha conteudo flex horizontalmente*/
+    align-items: center; /*alinha conteudo flex verticalmente*/
+    color: white;
+    background: url(images/showcase.webp) center center/cover;
+
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: color;/*Deixa o efeito blend no site*/
+}
+
+.showcase-container{
+    display: flex;
+    flex-direction: column; /*organiza os elementos em forma de coluna h2 p botton*/
+    align-items: center;
+}
+
+h2{
+    font-size: 5em;
+}
+
+p{
+    margin: 15px 0;
+    font-size: 1.1em;
+}
