@@ -10,6 +10,10 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.logo{
+    height: 40px;
+}
+
 .btn-primary{
     background-color: #1db954;
     color: white;
@@ -39,23 +43,20 @@ body{
     padding: 15px 0;
 }
 
-.logo{
-    height: 40px;
-}
-
-ul{
+#navbar ul{
     display: flex;
     align-items: center;
     list-style: none;
 }
 
-li{
+ #navbar ul li:nth-child(3){/*Coloquei na filha de ul, a li de numero tres*/
+    border-right: 1px solid white;
+}
+
+#navbar li{
     padding: 0 20px;
 }
 
-ul li:nth-child(3){/*Coloquei na filha de ul, a li de numero tres*/
-    border-right: 1px solid white;
-}
 
 #showcase{
     height: 100vh;/*ocupar 100% da visao da viewport*/
@@ -79,7 +80,95 @@ h2{
     font-size: 5em;
 }
 
-p{
+#showcase p{
     margin: 15px 0;
     font-size: 1.1em;
 }
+
+#navbar p{
+    margin: 15px 0;
+    font-size: 1.1em;
+}
+
+#footer{
+    background-color: black;
+    color: white;
+    padding: 80px 0;
+}
+
+.footer-content{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-items: center;
+
+}
+
+.footer-menu{
+    margin:0 60px;
+    list-style: none;
+}
+
+.footer-menu-item{
+    margin: 25px 0;
+}
+
+.footer-menu p{
+    font-weight:bold;
+    text-transform: uppercase;
+    color: #919496;
+    font-size: 0.8em;
+}
+
+.socials{
+    display: flex;
+}
+
+.socials i{
+    display: flex;
+    margin: 0 20px;
+    font-size: 1.7em;
+}
+
+
+.footer-info{
+    display:flex;
+    align-items: flex-end;/*Deixa no final*/
+    width: 60%;
+    margin: auto;
+}
+
+.footer-info-item{
+    display: flex;
+    list-style: none;
+    margin: 10px 10px;
+    font-weight: bold;
+    color: #919496;
+    font-size: 0.8em;
+}
+
+.rights{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #919496;
+    font-size: 0.8em;
+}
+
+.country{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.brazil-flag{
+    height: 20px;
+    width: auto;
+    display: inline-block;
+    margin-left:10px;
+}
+
+
