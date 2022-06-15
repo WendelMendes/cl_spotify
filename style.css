@@ -34,7 +34,7 @@ body{
 .navbar-container{
     display: flex;
     align-items: center; /*alinha conteudo flex verticalmente*/
-    justify-content: space-between; /*Deixar espaço entre os dois spoty e munu*/
+    justify-content: space-between; /*Deixar espaço entre os dois spoty e munu (o espaço depende da viewport)*/
     width: 45%;/*lagura do container perante navbar*/
     padding: 15px 0;
 }
