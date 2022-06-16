@@ -81,7 +81,7 @@ body{
     justify-content: center; /*alinha conteudo flex horizontalmente*/
     align-items: center; /*alinha conteudo flex verticalmente*/
     color: white;
-    background: url(images/c.jpg) center center/cover;
+    background: url(/cl_spotify/images/c.jpg) center center/cover;
 
     background-color: rgba(0,0,0,0.4);
     background-blend-mode: color;/*Deixa o efeito blend no site*/
